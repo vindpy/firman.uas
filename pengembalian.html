@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/styles2.css" />
+    <title>Formulir Peminjaman</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Orbitron&family=Poppins:wght@100;300;400;700&display=swap"rel="stylesheet"/>
+      <script>
+        document.addEventListener("DOMContentLoaded", function () {
+          // Menampilkan alert pemberitahuan syarat-syarat peminjaman
+          alert(
+            "Syarat Pengembalian:\n1. Harap isi semua kolom dengan benar.\n2. Tanggal pengembalian harus sesuai dengan yang ada di scrennshoot .\n3.tim akan mengecek ada kerusakan atau tidak jika ada kerusakan tim akan menghubungi anda."
+          );
+        });
+      </script>
+  </head>
+  <body>
+    <!-- Navbar start -->
+    <nav class="navbar">
+      <a href="#" class="navbar-logo">SOUND<span> SYSTEM</span> NFA</a>
+      <div class="navbar-nav">
+        <a href="index.html">Home</a>
+        <a href="index.html">Tentang Kami</a>
+      </div>
+    </nav>
+    <!-- Navbar end -->
+
+    <div class="container">
+      <!-- Formulir Pembayaran start -->
+      <div id="payment-form">
+        <h2>Formulir Pengembailan</h2>
+        <form action="php/konfirmasi_pengembalian.php" method="POST" method="FILES" enctype="multipart/form-data">
+          <label for="nama">Nama:</label>
+          <input type="text" id="nama" name="nama" placeholder="Masukan Nama Anda" required />
+
+          <label for="alamat">Alamat:</label>
+          <input type="text" id="alamat" name="alamat" placeholder="Masukan Alamat Anda " required />
+
+          <label for="nohp">Nomor Telepon:</label>
+          <input
+            type="tel"
+            id="nohp"
+            name="nohp"
+            placeholder="Masukkan nomor telepon"
+            required
+          />
+          <label for="tgl_kembali">Tanggal Pengembalian:</label>
+          <input type="date" id="tgl_kembali" name="tgl_kembali" required />
+
+            <label for="imageInput">Bukti Screenhoot:</label>
+            <input type="file" name="imageInput" placeholder="masukan bukti screeshoot peminjaman" id="imageInput"   accept="image/*" required/>
+            
+          <a href="php/konfirmasi_pengembalian.php"
+            ><button type="submit" class="cta-button">Pengembalian</button></a
+          >
+        </form>
+      </div>
+      <!-- Formulir Pembayaran end -->
+    </div>
+  </body>
+</html>

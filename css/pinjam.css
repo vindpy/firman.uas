@@ -1,0 +1,42 @@
+/* Tambahkan ini ke dalam file styimg.css atau buat file baru jika belum ada */
+#payment-form {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #f2f2f2;
+  border-radius: 8px;
+}
+
+#payment-form h2 {
+  text-align: center;
+  color: #333;
+}
+
+#payment-form form {
+  display: flex;
+  flex-direction: column;
+}
+
+#payment-form label {
+  margin-top: 10px;
+}
+
+#payment-form input,
+#payment-form select {
+  padding: 8px;
+  margin: 5px 0;
+}
+
+#payment-form button {
+  background-color: #4CAF50;
+  color: #fff;
+  padding: 10px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#payment-form button:hover {
+  background-color: #45a049;
+}

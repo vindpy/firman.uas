@@ -1,0 +1,157 @@
+:root {
+    --primary: #690a8b;
+    --bg: #010101;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    font-family: "Poppins", sans-serif;
+    background-color: var(--bg);
+  }
+  /* Navbar */
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.4rem 7%;
+    background-color: rgba(1, 1, 1, 0.8);
+    border-bottom: 1px solid #513c28;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+  }
+  
+  .navbar .navbar-logo {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #fff;
+  }
+  
+  .navbar .navbar-logo span {
+    color: #690a8b;
+  }
+  
+  .navbar .navbar-nav a {
+    color: #fff;
+    display: inline-block;
+    font-size: 1.3rem;
+    margin: 0 1rem;
+  }
+  
+  .navbar .navbar-nav a:hover {
+    color: #690a8b;
+  }
+  .navbar .navbar-nav a::after {
+    content: "";
+    display: block;
+    padding-bottom: 0.5rem;
+    border-bottom: 0.1rem solid var(--primary);
+    transform: scaleX(0);
+    transition: 0.2s linear;
+  }
+  
+  .navbar .navbar-nav a:hover::after {
+    transform: scaleX(0.5);
+  }
+  .navbar .navbar-extra a:hover {
+    color: var(--primary);
+  }
+
+ .container{
+    background-color: #fff;
+    max-width: 600px;
+    margin-top: 8%;
+    margin-left: 27%;
+    padding: 20px;
+    box-shadow: 15px 15px 20px rgb(89, 8, 87);
+    border-radius: 8px;
+    animation: fadeIn 0.5s ease-in-out;
+}
+#konfirmasi {
+    background-color: #fff;
+    max-width: 600px;
+    margin-top: 8%;
+    margin-left: 27%;
+    padding: 20px;
+    box-shadow: 15px 15px 20px rgb(89, 8, 87);
+    border-radius: 8px;
+}
+
+h2 {
+    color: #333;
+    text-align: center;
+}
+
+p {
+    margin-top: 20px;
+    margin-left: 3rem;
+    font-size: 20px;
+    color: #000000;
+}
+
+table{
+    margin-left: 4rem;
+    color: #555;
+}
+h1{
+    color: red;
+
+}
+
+button {
+    background-color: #4caf50;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-left: 35%;
+}
+
+button:hover {
+    background-color: #c539c0;
+}
+
+#payment-form {
+    display: none;
+}
+
+#payment-form label {
+    display: block;
+    margin: 10px 0;
+    color: #333;
+}
+
+#payment-form input {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+}
+
+#payment-form button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#payment-form button:hover {
+    background-color: #0056b3;
+}

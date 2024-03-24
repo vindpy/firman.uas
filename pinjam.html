@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/styles2.css" />
+    <title>Formulir Peminjaman</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Orbitron&family=Poppins:wght@100;300;400;700&display=swap">
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        // Menampilkan alert pemberitahuan syarat-syarat peminjaman
+        alert(
+          "Syarat Peminjaman:\n1. Harap isi semua kolom dengan benar.\n2. Tanggal peminjaman harus lebih awal dari tanggal pengembalian.\n3. Pastikan untuk memilih jenis Sound System yang diinginkan."
+        );
+      });
+    </script>
+  </head>
+  <body>
+    <!-- Navbar start -->
+    <nav class="navbar">
+      <a href="#" class="navbar-logo">SOUND<span> SYSTEM</span> NFA</a>
+      <div class="navbar-nav">
+        <a href="index.html">Home</a>
+        <a href="index.html">Tentang Kami</a>
+      </div>
+    </nav>
+    <!-- Navbar end -->
+
+    <div class="container">
+      <!-- Formulir Pembayaran start -->
+      <div id="payment-form">
+        <h2>Formulir Peminjaman</h2>
+        <form action="php/proses_pemesanan.php" method="POST">
+          <label for="nama">Nama:</label>
+          <input type="text" id="nama" name="nama" placeholder="Masukan Nama Anda" required />
+
+          <label for="alamat">Alamat Pengiriman Lengkap:</label>
+          <input  type="text" id="nama" name="alamat" placeholder="nama jln rt/rw kelurahan kota provinsi" required />
+
+          <label for="imageInput">Upload KTP:</label>
+          <input type="file" name="imageInput" placeholder="upaload ktp anda" id="imageInput"    accept="image/*" required/>
+
+          <label for="nohp">Nomor Telepon:</label>
+          <input
+            type="tel"
+            id="nohp"
+            name="nohp"
+            placeholder="Masukkan nomor telepon"
+            required
+          />
+
+          <label for="tgl_pinjam">Tanggal Peminjaman:</label>
+          <input type="date" id="tgl_pinjam" name="tgl_pinjam"placeholder="masukan tanggal" required />
+
+          <label for="tgl_kembali">Tanggal Pengembalian:</label>
+          <input type="date" id="tgl_kembali" name="tgl_kembali" required />
+
+          <label for="sound">Sound System yang Dipilih:</label>
+          <select id="sound" name="sound" required>
+            <option value="sound 8000watt" name="sound1">
+              Sound 8000 Watt
+            </option>
+            <option value="sound 10.000watt" name="sound2">
+              Sound 10.000 Watt
+            </option>
+            <option value="sound 15.000watt" name="sound2">
+              Sound 15.000 Watt
+            </option>
+          </select>
+          <a href="php/proses_pemesanan.php"
+            ><button type="submit" class="cta-button">Konfirmasi Pemesanan</button></a
+          >
+          <span> Peminjaman dihitung sehari setelah barang sudah di anatar ketempat pengiriman ,di setting dan di pasang oleh tim kami/operator, </span>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
